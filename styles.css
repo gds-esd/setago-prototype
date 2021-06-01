@@ -1,3 +1,8 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 #login-page{
     width: 100vw;
     height: 100vh;
@@ -5,4 +10,8 @@
     background: #FFFFFF;
     justify-content: center;
     align-items: center;
+}
+
+#login-page-title{
+    text-align: center;
 }
