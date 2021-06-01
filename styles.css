@@ -19,3 +19,9 @@ body{
 .input-title{
     margin:5px 0px;
 }
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
