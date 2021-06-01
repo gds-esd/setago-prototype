@@ -1,0 +1,8 @@
+#login-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
