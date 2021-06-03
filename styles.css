@@ -30,3 +30,38 @@ body{
 }
 
 /* //////////////////////////////////////////////////////////////////////// */
+
+#focus-area-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#focus-area-title{
+    text-align: center;
+}
+
+#focus-area-welcome{
+    text-align: center;
+    margin: 1px;
+}
+
+#focus-area-instruction{
+    text-align: center;
+}
+
+#select-21CC{
+    text-align: center;
+}
+
+#focus-area-questionnaire{
+    text-align: center;
+}
+
+#focus-area-donebutn{
+    text-align: center;
+}
+
