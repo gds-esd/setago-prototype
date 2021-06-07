@@ -50,7 +50,7 @@ function setup(){ // a function that runs once
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
 
-    
+    DOM_EL.loginPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
@@ -72,8 +72,36 @@ function draw(){  // a function that runs in a loop once function setup is finis
 function loginEvent(){
     console.log("check if account and password is correct");
     console.log(DOM_EL.loginPageUsername.value());
+    if(DOM_EL.loginPageUsername.value() == "username"){
+        if(DOM_EL.loginPagePassword.value() == "password"){
+            //yay both username and password matched!
+            console.log("show relevant page");
+        }
+        else{
+            console.log("boo password wrong");
+        }
+    }
+    else{
+        console.log("boo username wrong");
+    }
+    //     if(DOM_EL.loginPageUsername.value() == "username"){
+    //         if(DOM_EL.loginPagePassword.value() == "password")
+    //         //yay its a matched
+    //         console.log("show relevant page")
+    //     }
+    //     else{
+    //         console.log("boo username wrong")
+    //     }
+    // }
+    // else{
+    //     console.log("boo username wrong")
+    // }
+    console.log(DOM_EL.loginPagePassword.value());
     console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
     console.log("wait for server to reply");
     console.log("show relevant page");
 }
+
+// if the value of login username = "username" , and if login password = "password",
+// hide loginpage
 
