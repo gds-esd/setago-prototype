@@ -110,3 +110,20 @@ body{
     text-align:center;
     padding: 0px 400px 0px 0px;
 }
+
+#dashboard-menu-title{
+    padding:0px 10px;
+}
+
+#dashboard-tab{
+    padding:0px 10px;
+}
+
+#challenge-tab{
+    padding:0px 10px;
+}
+
+#Progression-tab{
+    padding:0px 10px;
+}
+
