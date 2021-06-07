@@ -88,3 +88,12 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////// */
 
+#dashboard-menu{
+    background: #9287ff;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
