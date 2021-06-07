@@ -50,7 +50,7 @@ function setup(){ // a function that runs once
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
 
-    DOM_EL.loginPage.hide();
+    
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
@@ -75,6 +75,8 @@ function loginEvent(){
     if(DOM_EL.loginPageUsername.value() == "username"){
         if(DOM_EL.loginPagePassword.value() == "password"){
             //yay both username and password matched!
+            DOM_EL.loginPage.hide();
+            DOM_EL.dashboardPage.style("display","flex");
             console.log("show relevant page");
         }
         else{
