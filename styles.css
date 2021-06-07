@@ -67,3 +67,14 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////// */
 
+#questionnaire-title{
+    text-align: center;
+}
+
+#questionnaire-statement{
+    text-align: center;
+}
+
+#all-question-page{
+    text-align: center;
+}
