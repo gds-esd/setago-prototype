@@ -88,12 +88,25 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////// */
 
+#dashboard-page{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+
+}
+
 #dashboard-menu{
     background: #9287ff;
-    width: 200px;
+    widows: 200px;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    text-align:left;
+
+}
+
+#futureself-container{
+    text-align:center;
+    padding:0px 20px 300px 0px;
+    
 }
