@@ -67,23 +67,3 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////// */
 
-#questioniare-page{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-#questionnaire-title{
-    text-align: center;
-}
-
-#questionnaire-statement{
-    text-align: center;
-}
-
-#all-question-page{
-    text-align: center;
-}
