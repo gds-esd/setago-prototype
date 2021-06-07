@@ -18,6 +18,8 @@ lastly you need to place this file in your js folder.
 var DOM_EL = {
     loginPage : null,
         loginButton : null,
+        loginPageUsername: null,
+        loginPagePassword: null,
     focusAreaPage : null,
     questionnairePage : null,
     dashboardPage : null,
@@ -39,6 +41,8 @@ function setup(){ // a function that runs once
     DOM_EL.loginPage = select("#login-page");
         DOM_EL.loginButton = select("#login-button");
         DOM_EL.loginButton.mousePressed(loginEvent);          // we will talk a little about this
+        DOM_EL.loginPageUsername = select("#login-page-username");
+        DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.focusAreaPage = select("#focus-area-page");
     DOM_EL.questionnairePage = select("#questionnaire-page"); // we will talk a little about this
     DOM_EL.dashboardPage = select("#dashboard-page");
@@ -67,6 +71,7 @@ function draw(){  // a function that runs in a loop once function setup is finis
 
 function loginEvent(){
     console.log("check if account and password is correct");
+    console.log(DOM_EL.loginPageUsername.value());
     console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
     console.log("wait for server to reply");
     console.log("show relevant page");
