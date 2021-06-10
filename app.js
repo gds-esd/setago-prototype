@@ -46,6 +46,7 @@ function setup(){ // a function that runs once
     DOM_EL.focusAreaPage = select("#focus-area-page");
     DOM_EL.questionnairePage = select("#questionnaire-page"); // we will talk a little about this
     DOM_EL.dashboardPage = select("#dashboard-page");
+        DOM_EL.dashboardPage = select("#challenge-tab");
     DOM_EL.challengePage = select("#challenge-page");
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
@@ -107,3 +108,4 @@ function loginEvent(){
 // if the value of login username = "username" , and if login password = "password",
 // hide loginpage
 
+///////////////////////////////////////////////////////////////////////////
