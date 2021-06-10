@@ -23,6 +23,8 @@ var DOM_EL = {
     focusAreaPage : null,
     questionnairePage : null,
     dashboardPage : null,
+        challengeTab: null;
+        progressionTab: null;
     challengePage : null,
     ccaChallengePage : null,
     ccaQuizPage : null,
@@ -40,13 +42,12 @@ function setup(){ // a function that runs once
     
     DOM_EL.loginPage = select("#login-page");
         DOM_EL.loginButton = select("#login-button");
-        DOM_EL.loginButton.mousePressed(loginEvent);          // we will talk a little about this
+        DOM_EL.loginButton.mousePressed(loginEvent);
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.focusAreaPage = select("#focus-area-page");
-    DOM_EL.questionnairePage = select("#questionnaire-page"); // we will talk a little about this
+    DOM_EL.questionnairePage = select("#questionnaire-page");
     DOM_EL.dashboardPage = select("#dashboard-page");
-        DOM_EL.dashboardPage = select("#challenge-tab");
     DOM_EL.challengePage = select("#challenge-page");
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
@@ -87,18 +88,7 @@ function loginEvent(){
     else{
         console.log("boo username wrong");
     }
-    //     if(DOM_EL.loginPageUsername.value() == "username"){
-    //         if(DOM_EL.loginPagePassword.value() == "password")
-    //         //yay its a matched
-    //         console.log("show relevant page")
-    //     }
-    //     else{
-    //         console.log("boo username wrong")
-    //     }
-    // }
-    // else{
-    //     console.log("boo username wrong")
-    // }
+
     console.log(DOM_EL.loginPagePassword.value());
     console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
     console.log("wait for server to reply");
@@ -109,3 +99,38 @@ function loginEvent(){
 // hide loginpage
 
 ///////////////////////////////////////////////////////////////////////////
+
+function dashBoardsetup(){
+    DOM_EL.loginPage = select("#login-page");
+        DOM_EL.loginButton = select("#login-button");
+        DOM_EL.loginButton.mousePressed(loginEvent);
+        DOM_EL.loginPageUsername = select("#login-page-username");
+        DOM_EL.loginPagePassword = select("#login-page-password");
+    DOM_EL.focusAreaPage = select("#focus-area-page");
+    DOM_EL.questionnairePage = select("#questionnaire-page");
+    DOM_EL.dashboardPage = select("#dashboard-page");
+        DOM_EL.challengeTab = select("#challenge-page")
+    DOM_EL.challengePage = select("#challenge-page");
+    DOM_EL.ccaChallengePage = select("#cca-challenge-page");
+    DOM_EL.ccaQuizPage = select("#cca-quiz-page");
+
+    DOM_EL.loginPage.hide();
+    DOM_EL.focusAreaPage.hide();
+    DOM_EL.questionnairePage.hide();
+    DOM_EL.challengePage.hide();
+    DOM_EL.ccaChallengePage.hide();
+    DOM_EL.ccaQuizPage.hide();
+}
+
+///////////////////////////////////////////////////////////////////////////
+function dashBoarddraw(){  // a function that runs in a loop once function setup is finished
+
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+function dashboardEvent(){
+    console.log(DOM_EL.challengeTab.value());
+    DOM_EL.dashboardPage.hide();
+    DOM_EL.challengeTab.style("display","flex");
+}
