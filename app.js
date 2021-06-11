@@ -48,7 +48,7 @@ function setup(){ // a function that runs once
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.mainPage = select("#main-page");
-        DOM_EL.setagoTab = select("#dashboard-menu-title");
+        DOM_EL.setagoTab = select("#title");
         DOM_EL.setagoTab.mousePressed(logoEvent);
         DOM_EL.challengeTab = select("#challenge-tab");
         DOM_EL.challengeTab.mousePressed(challengeEvent);
