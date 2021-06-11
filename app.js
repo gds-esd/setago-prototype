@@ -117,7 +117,6 @@ function setup(){ // a function that runs once
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
 
-    DOM_EL.loginPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
