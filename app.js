@@ -100,37 +100,3 @@ function loginEvent(){
 
 ///////////////////////////////////////////////////////////////////////////
 
-function dashBoardsetup(){
-    DOM_EL.loginPage = select("#login-page");
-        DOM_EL.loginButton = select("#login-button");
-        DOM_EL.loginButton.mousePressed(loginEvent);
-        DOM_EL.loginPageUsername = select("#login-page-username");
-        DOM_EL.loginPagePassword = select("#login-page-password");
-    DOM_EL.focusAreaPage = select("#focus-area-page");
-    DOM_EL.questionnairePage = select("#questionnaire-page");
-    DOM_EL.dashboardPage = select("#dashboard-page");
-        DOM_EL.challengeTab = select("#challenge-page")
-    DOM_EL.challengePage = select("#challenge-page");
-    DOM_EL.ccaChallengePage = select("#cca-challenge-page");
-    DOM_EL.ccaQuizPage = select("#cca-quiz-page");
-
-    DOM_EL.loginPage.hide();
-    DOM_EL.focusAreaPage.hide();
-    DOM_EL.questionnairePage.hide();
-    DOM_EL.challengePage.hide();
-    DOM_EL.ccaChallengePage.hide();
-    DOM_EL.ccaQuizPage.hide();
-}
-
-///////////////////////////////////////////////////////////////////////////
-function dashBoarddraw(){  // a function that runs in a loop once function setup is finished
-
-}
-
-///////////////////////////////////////////////////////////////////////////
-
-function dashboardEvent(){
-    console.log(DOM_EL.challengeTab.value());
-    DOM_EL.dashboardPage.hide();
-    DOM_EL.challengeTab.style("display","flex");
-}
