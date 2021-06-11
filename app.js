@@ -20,15 +20,16 @@ var DOM_EL = {
         loginButton : null,
         loginPageUsername: null,
         loginPagePassword: null,
-    focusAreaPage : null,
-    questionnairePage : null,
-    dashboardPage : null,
+    mainPage: null,
         setagoTab : null,
         challengeTab: null,
         progressionTab: null,
-    challengePage : null,
-    ccaChallengePage : null,
-    ccaQuizPage : null,
+        focusAreaPage : null,
+        questionnairePage : null,
+        dashboardPage : null,
+        challengePage : null,
+        ccaChallengePage : null,
+        ccaQuizPage : null,
 }
 
 var APP_STATE = {
@@ -46,14 +47,19 @@ function setup(){ // a function that runs once
         DOM_EL.loginButton.mousePressed(loginEvent);
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
-    DOM_EL.focusAreaPage = select("#focus-area-page");
-    DOM_EL.questionnairePage = select("#questionnaire-page");
-    DOM_EL.dashboardPage = select("#dashboard-page");
-    DOM_EL.challengePage = select("#challenge-page");
-    DOM_EL.ccaChallengePage = select("#cca-challenge-page");
-    DOM_EL.ccaQuizPage = select("#cca-quiz-page");
+    DOM_EL.mainPage = select("#main-page");
+        DOM_EL.setagoTab = select("#dashboard-menu-title");
+        DOM_EL.setagoTab.mousePressed(logoEvent);
+        DOM_EL.challengeTab = select("#challenge-tab");
+        DOM_EL.challengeTab.mousePressed(challengeEvent);
+        DOM_EL.focusAreaPage = select("#focus-area-page");
+        DOM_EL.questionnairePage = select("#questionnaire-page");
+        DOM_EL.dashboardPage = select("#dashboard-page");
+        DOM_EL.challengePage = select("#challenge-page");
+        DOM_EL.ccaChallengePage = select("#cca-challenge-page");
+        DOM_EL.ccaQuizPage = select("#cca-quiz-page");
 
-    
+    DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
@@ -79,7 +85,8 @@ function loginEvent(){
         if(DOM_EL.loginPagePassword.value() == "password"){
             //yay both username and password matched!
             DOM_EL.loginPage.hide();
-            DOM_EL.dashboardPage.style("display","flex");
+            DOM_EL.mainPage.style("display","flex");
+            DOM_EL.dashboardPage.style("display", "flex");
             console.log("show relevant page");
         }
         else{
@@ -111,33 +118,6 @@ xhr.send();
 
 ///////////////////////////////////////////////////////////////////////////
 
-function setup(){ // a function that runs once
-
-    
-    DOM_EL.loginPage = select("#login-page");
-        DOM_EL.loginButton = select("#login-button");
-        DOM_EL.loginButton.mousePressed(loginEvent);
-        DOM_EL.loginPageUsername = select("#login-page-username");
-        DOM_EL.loginPagePassword = select("#login-page-password");
-    DOM_EL.focusAreaPage = select("#focus-area-page");
-    DOM_EL.questionnairePage = select("#questionnaire-page");
-    DOM_EL.dashboardPage = select("#dashboard-page");
-        DOM_EL.challengeTab = select("#challenge-tab");
-        DOM_EL.challengeTab.mousePressed(challengeEvent);
-        DOM_EL.setagoTab = select("#dashboard-menu-title");
-        DOM_EL.setagoTab.mousePressed(logoEvent);
-    DOM_EL.challengePage = select("#challenge-page");
-    DOM_EL.ccaChallengePage = select("#cca-challenge-page");
-    DOM_EL.ccaQuizPage = select("#cca-quiz-page");
-
-    DOM_EL.focusAreaPage.hide();
-    DOM_EL.questionnairePage.hide();
-    DOM_EL.dashboardPage.hide();
-    DOM_EL.challengePage.hide();
-    DOM_EL.ccaChallengePage.hide();
-    DOM_EL.ccaQuizPage.hide();
-
-}
 
 ///////////////////////////////////////////////////////////////////////////
 
