@@ -23,8 +23,8 @@ var DOM_EL = {
     focusAreaPage : null,
     questionnairePage : null,
     dashboardPage : null,
-        challengeTab: null;
-        progressionTab: null;
+        challengeTab: null,
+        progressionTab: null,
     challengePage : null,
     ccaChallengePage : null,
     ccaQuizPage : null,
