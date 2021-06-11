@@ -23,6 +23,7 @@ var DOM_EL = {
     focusAreaPage : null,
     questionnairePage : null,
     dashboardPage : null,
+        setagoTab : null,
         challengeTab: null,
         progressionTab: null,
     challengePage : null,
@@ -93,6 +94,16 @@ function loginEvent(){
     console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
     console.log("wait for server to reply");
     console.log("show relevant page");
+
+    let u = "?user=" + DOM_EL.loginPageUsername.value();
+let k = "&password=" + DOM_EL.loginPagePassword.value();
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://cotf.cf/admin/SETAGO_GET_USER' + u + k, true);
+xhr.onload = function () {
+    console.log("got a reply");
+};
+xhr.send();
 }
 
 // if the value of login username = "username" , and if login password = "password",
@@ -112,7 +123,9 @@ function setup(){ // a function that runs once
     DOM_EL.questionnairePage = select("#questionnaire-page");
     DOM_EL.dashboardPage = select("#dashboard-page");
         DOM_EL.challengeTab = select("#challenge-tab");
-        DOM_EL.challengeTab.mousePressed(dashboardEvent);
+        DOM_EL.challengeTab.mousePressed(challengeEvent);
+        DOM_EL.setagoTab = select("#dashboard-page");
+        DOM_EL.setagoTab.mousePressed(logoEvent);
     DOM_EL.challengePage = select("#challenge-page");
     DOM_EL.ccaChallengePage = select("#cca-challenge-page");
     DOM_EL.ccaQuizPage = select("#cca-quiz-page");
@@ -128,8 +141,25 @@ function setup(){ // a function that runs once
 
 ///////////////////////////////////////////////////////////////////////////
 
-function dashboardEvent(){
+function challengeEvent(){
+    DOM_EL.focusAreaPage.hide();
+    DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
+    DOM_EL.challengePage.hide();
+    DOM_EL.ccaChallengePage.hide();
+    DOM_EL.ccaQuizPage.hide();
     DOM_EL.challengePage.style("display","flex");
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+function logoEvent(){
+    DOM_EL.focusAreaPage.hide();
+    DOM_EL.questionnairePage.hide();
+    DOM_EL.dashboardPage.hide();
+    DOM_EL.challengePage.hide();
+    DOM_EL.ccaChallengePage.hide();
+    DOM_EL.ccaQuizPage.hide();
+    DOM_EL.dashboardPage.style("display","flex");
   
 }
