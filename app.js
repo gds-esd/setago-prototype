@@ -129,6 +129,7 @@ function setup(){ // a function that runs once
 ///////////////////////////////////////////////////////////////////////////
 
 function dashboardEvent(){
-    console.log(DOM_EL.dashboardPage);
+    DOM_EL.dashboardPage.hide();
+    DOM_EL.challengePage.style("display","flex");
   
 }
