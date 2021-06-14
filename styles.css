@@ -40,10 +40,6 @@ body{
     align-content: center;
 }
 
-#focus-area-title{
-    text-align: center;
-}
-
 #focus-area-welcome{
     text-align: center;
     margin: 1px;
@@ -74,9 +70,6 @@ body{
     align-content: center;
 }
 
-#questionnaire-title{
-    text-align: center;
-}
 
 #questionnaire-statement{
     text-align: center;
@@ -93,33 +86,12 @@ body{
     
 }
 
-/* //////////////////////////////////////////////////////////////////////// */
 
-#dashboard-page{
-    width:100vw;
-    height:100vh;
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    justify-content: center;
-
-}
-
-#dashboard-menu{
+#side-container{
     background: #9287ff;
     width: 200px;
     height: 1000px;
     text-align:left;
-
-}
-
-#futureself-container{
-    text-align:center;
-    padding: 0px 400px 0px 0px;
-}
-
-#dashboard-menu-title{
-    padding:0px 10px;
 }
 
 #dashboard-tab{
@@ -133,4 +105,26 @@ body{
 #Progression-tab{
     padding:0px 10px;
 }
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+#dashboard-page{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content: center;
+
+}
+
+#futureself-container{
+    text-align:center;
+    padding: 0px 400px 0px 0px;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+
 
