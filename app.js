@@ -31,6 +31,8 @@ var DOM_EL = {
         challengePage : null,
             ccachallengeTab : null,
                 ccachallengePage : null,
+                ccachallengeQuiz : null,
+                ccachallengeMain : null,
             commchallengeTab : null,
             srdmchallengeTab : null,
 
@@ -67,6 +69,9 @@ function setup(){ // a function that runs once
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.ccachallengePage.hide();
+    DOM_EL.ccachallengeQuiz.hide();
+    DOM_EL.ccachallengeMain.hide();
 }
 
 
@@ -145,4 +150,7 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.ccachallengePage.hide();
+    DOM_EL.ccachallengeQuiz.hide();
+    DOM_EL.ccachallengeMain.hide();
 }
