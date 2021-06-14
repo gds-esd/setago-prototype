@@ -21,15 +21,19 @@ var DOM_EL = {
         loginPageUsername: null,
         loginPagePassword: null,
     mainPage: null,
-        setagoTab : null,
-        challengeTab: null,
-        progressionTab: null,
+        sidebarContainer : null,
+            setagoTab : null,
+            challengeTab: null,
+            progressionTab: null,
         focusAreaPage : null,
         questionnairePage : null,
         dashboardPage : null,
         challengePage : null,
-        ccaChallengePage : null,
-        ccaQuizPage : null,
+            ccachallengeTab : null,
+                ccachallengePage : null,
+            commchallengeTab : null,
+            srdmchallengeTab : null,
+
 }
 
 var APP_STATE = {
@@ -56,17 +60,13 @@ function setup(){ // a function that runs once
         DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
         DOM_EL.challengePage = select("#challenge-page");
-        DOM_EL.ccaChallengePage = select("#cca-challenge-page");
-        DOM_EL.ccaQuizPage = select("#cca-quiz-page");
+        DOM_EL.ccachallengeTab = select("#cca-startbutn");
 
     DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-    DOM_EL.ccaChallengePage.hide();
-    DOM_EL.ccaQuizPage.hide();
-
 }
 
 
@@ -117,6 +117,10 @@ xhr.send();
 // hide loginpage
 
 ///////////////////////////////////////////////////////////////////////////
+function ccachallengeEvent(){
+    hideAllsubPage();
+    DOM_EL.ccachallengePage.style("display","flex");
+}
 
 
 ///////////////////////////////////////////////////////////////////////////
@@ -141,6 +145,4 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-    DOM_EL.ccaChallengePage.hide();
-    DOM_EL.ccaQuizPage.hide();
 }
