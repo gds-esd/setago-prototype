@@ -96,6 +96,7 @@ body{
 
 #dashboard-tab{
     padding:0px 10px;
+    color:white;
 }
 
 #challenge-tab{
@@ -134,5 +135,5 @@ body{
 }
 
 #diff-challenges{
-    padding: 0px 400px 0px 0px;
+    padding: 0px 0px 0px 50px;
 }
