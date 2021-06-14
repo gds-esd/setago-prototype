@@ -131,7 +131,8 @@ body{
     display:flex;
     flex-wrap:wrap;
     flex-direction:column;
-    padding: 0px 400px 0px 0px;
 }
 
-
+#diff-challenges{
+    padding: 0px 400px 0px 0px;
+}
