@@ -94,6 +94,12 @@ body{
     text-align:left;
 }
 
+#title{
+    padding: 0px 10px;
+    color:white;
+
+}
+
 #dashboard-tab{
     padding:0px 10px;
     color:white;
@@ -101,10 +107,12 @@ body{
 
 #challenge-tab{
     padding:0px 10px;
+    color:white;
 }
 
 #progression-tab{
     padding:0px 10px;
+    color:white;
 }
 
 /* //////////////////////////////////////////////////////////////////////// */
