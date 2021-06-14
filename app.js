@@ -122,24 +122,25 @@ xhr.send();
 ///////////////////////////////////////////////////////////////////////////
 
 function challengeEvent(){
-    DOM_EL.focusAreaPage.hide();
-    DOM_EL.questionnairePage.hide();
-    DOM_EL.dashboardPage.hide();
-    DOM_EL.challengePage.hide();
-    DOM_EL.ccaChallengePage.hide();
-    DOM_EL.ccaQuizPage.hide();
+    hideAllsubPage();
     DOM_EL.challengePage.style("display","flex");
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
 function logoEvent(){
+    hideAllsubPage();
+    DOM_EL.dashboardPage.style("display","flex");
+  
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+function hideAllsubPage(){
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.ccaChallengePage.hide();
     DOM_EL.ccaQuizPage.hide();
-    DOM_EL.dashboardPage.style("display","flex");
-  
 }
