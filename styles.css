@@ -133,6 +133,9 @@ body{
     flex-wrap:wrap;
     flex-direction:column;
 }
+#challenge-title{
+    padding: 0px 0px 0px 50px;
+}
 
 #diff-challenges{
     padding: 0px 0px 0px 50px;
