@@ -76,6 +76,7 @@ function setup(){ // a function that runs once
                     DOM_EL.srdmchallengeTab.mousePressed(srdmchallengeEvent);
         
 
+    DOM_EL.loginPage.hide();
     DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
@@ -168,6 +169,7 @@ function ccachallengeEvent(){
 
 function commchallengeEvent(){
     hideAllsubPage();
+    DOM_EL.commchallengePage.style("display","flex");
    
 }
 
@@ -176,6 +178,7 @@ function commchallengeEvent(){
 
 function srdmchallengeEvent(){
     hideAllsubPage();
+    DOM_EL.srdmchallengePage.style("display","flex");
    
 }
 
