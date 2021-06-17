@@ -61,7 +61,6 @@ function setup(){ // a function that runs once
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
-        DOM_EL.challengePage = select("#challenge-page");
         DOM_EL.ccachallengeTab = select("#cca-startbutn");
 
     DOM_EL.mainPage.hide();
