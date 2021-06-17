@@ -60,18 +60,21 @@ function setup(){ // a function that runs once
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.mainPage = select("#main-page");
-        DOM_EL.setagoTab = select("#title");
-        DOM_EL.setagoTab.mousePressed(logoEvent);
-        DOM_EL.challengeTab = select("#challenge-tab");
-        DOM_EL.challengeTab.mousePressed(challengeEvent);
-        DOM_EL.challengePage = select("#challenge-page")
-            DOM_EL.ccachallengeTab = select ("#cca-startbutn");
-            DOM_EL.ccachallengeTab.mousePressed(ccachallengeEvent);
-            DOM_EL.commchallengeTab = select("#comm-startbtn");
-            DOM_EL.commchallengeTab.mousePressed(commchallengeEvent);
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
+            DOM_EL.setagoTab = select("#title");
+            DOM_EL.setagoTab.mousePressed(logoEvent);
+            DOM_EL.challengeTab = select("#challenge-tab");
+            DOM_EL.challengeTab.mousePressed(challengeEvent);
+                DOM_EL.challengePage = select("#challenge-page")
+                    DOM_EL.ccachallengeTab = select ("#cca-startbutn");
+                    DOM_EL.ccachallengeTab.mousePressed(ccachallengeEvent);
+                    DOM_EL.commchallengeTab = select("#comm-startbtn");
+                    DOM_EL.commchallengeTab.mousePressed(commchallengeEvent);
+                    DOM_EL.srdmchallengeTab = select("#srdm-startbutn")
+
+        
 
     DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
@@ -163,7 +166,15 @@ function ccachallengeEvent(){
 
 function commchallengeEvent(){
     hideAllsubPage();
-    DOM_EL.commchallengeTab
+   
+}
+
+
+///////////////////////////////////////////////////////////////////////////
+
+function srdmchallengeEvent(){
+    hideAllsubPage();
+   
 }
 
 
