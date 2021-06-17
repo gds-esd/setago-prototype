@@ -72,8 +72,8 @@ function setup(){ // a function that runs once
                     DOM_EL.ccachallengeTab.mousePressed(ccachallengeEvent);
                     DOM_EL.commchallengeTab = select("#comm-startbtn");
                     DOM_EL.commchallengeTab.mousePressed(commchallengeEvent);
-                    DOM_EL.srdmchallengeTab = select("#srdm-startbutn")
-
+                    DOM_EL.srdmchallengeTab = select("#srdm-startbutn");
+                    DOM_EL.srdmchallengeTab.mousePressed(srdmchallengeEvent);
         
 
     DOM_EL.mainPage.hide();
@@ -84,10 +84,12 @@ function setup(){ // a function that runs once
         DOM_EL.ccachallengePage.hide();
         DOM_EL.ccachallengeQuiz.hide();
         DOM_EL.ccachallengeMain.hide();
-        DOM_EL.commchallengeTab.hide();
         DOM_EL.commchallengePage.hide();
         DOM_EL.commchallengePage.hide();
         DOM_EL.commchallengeQuiz.hide();
+        DOM_EL.srdmchallengePage.hide();
+        DOM_EL.srdmchallengeQuiz.hide();
+        DOM_EL.srdmchallengeMain.hide();
 
 
 }
