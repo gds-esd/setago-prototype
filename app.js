@@ -34,7 +34,13 @@ var DOM_EL = {
                 ccachallengeQuiz : null,
                 ccachallengeMain : null,
             commchallengeTab : null,
+                commchallengePage : null,
+                commchallengeQuiz : null,
+                commchallengeMain : null,
             srdmchallengeTab : null,
+                srdmchallengePage : null, 
+                srdmchallengeQuiz : null, 
+                srdmchallengeMain : null, 
 
 }
 
@@ -58,19 +64,29 @@ function setup(){ // a function that runs once
         DOM_EL.setagoTab.mousePressed(logoEvent);
         DOM_EL.challengeTab = select("#challenge-tab");
         DOM_EL.challengeTab.mousePressed(challengeEvent);
+        DOM_EL.challengePage = select("#challenge-page")
+            DOM_EL.ccachallengeTab = select ("#cca-startbutn");
+            DOM_EL.ccachallengeTab.mousePressed(ccachallengeEvent);
+            DOM_EL.commchallengeTab = select("#comm-startbtn");
+            DOM_EL.commchallengeTab.mousePressed(commchallengeEvent);
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
-        DOM_EL.ccachallengeTab = select("#cca-startbutn");
 
     DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-    DOM_EL.ccachallengePage.hide();
-    DOM_EL.ccachallengeQuiz.hide();
-    DOM_EL.ccachallengeMain.hide();
+        DOM_EL.ccachallengePage.hide();
+        DOM_EL.ccachallengeQuiz.hide();
+        DOM_EL.ccachallengeMain.hide();
+        DOM_EL.commchallengeTab.hide();
+        DOM_EL.commchallengePage.hide();
+        DOM_EL.commchallengePage.hide();
+        DOM_EL.commchallengeQuiz.hide();
+
+
 }
 
 
@@ -121,12 +137,13 @@ xhr.send();
 // hide loginpage
 
 ///////////////////////////////////////////////////////////////////////////
-function ccachallengeEvent(){
+
+
+function logoEvent(){
     hideAllsubPage();
-    DOM_EL.ccachallengePage.style("display","flex");
+    DOM_EL.dashboardPage.style("display","flex");
+  
 }
-
-
 ///////////////////////////////////////////////////////////////////////////
 
 function challengeEvent(){
@@ -136,11 +153,19 @@ function challengeEvent(){
 
 ///////////////////////////////////////////////////////////////////////////
 
-function logoEvent(){
+function ccachallengeEvent(){
     hideAllsubPage();
-    DOM_EL.dashboardPage.style("display","flex");
-  
+    DOM_EL.ccachallengePage.style("display","flex");
 }
+
+
+///////////////////////////////////////////////////////////////////////////
+
+function commchallengeEvent(){
+    hideAllsubPage();
+    DOM_EL.commchallengeTab
+}
+
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -149,7 +174,10 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-    DOM_EL.ccachallengePage.hide();
-    DOM_EL.ccachallengeQuiz.hide();
-    DOM_EL.ccachallengeMain.hide();
+        DOM_EL.ccachallengePage.hide();
+            DOM_EL.ccachallengeQuiz.hide();
+            DOM_EL.ccachallengeMain.hide();
+        DOM_EL.commchallengePage.hide();
+            DOM_EL.commchallengePage.hide();
+            DOM_EL.commchallengeQuiz.hide();
 }
