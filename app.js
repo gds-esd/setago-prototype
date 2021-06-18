@@ -29,18 +29,6 @@ var DOM_EL = {
         questionnairePage : null,
         dashboardPage : null,
         challengePage : null,
-            ccachallengeTab : null,
-                ccachallengePage : null,
-                ccachallengeQuiz : null,
-                ccachallengeMain : null,
-            commchallengeTab : null,
-                commchallengePage : null,
-                commchallengeQuiz : null,
-                commchallengeMain : null,
-            srdmchallengeTab : null,
-                srdmchallengePage : null, 
-                srdmchallengeQuiz : null, 
-                srdmchallengeMain : null, 
 
 }
 
@@ -71,15 +59,6 @@ function setup(){ // a function that runs once
 
 
     DOM_EL.mainPage.hide();
-    DOM_EL.ccachallengePage.hide();
-    DOM_EL.ccachallengeQuiz.hide();
-    DOM_EL.ccachallengeMain.hide();
-    DOM_EL.commchallengePage.hide();
-    DOM_EL.commchallengePage.hide();
-    DOM_EL.commchallengeQuiz.hide();
-    DOM_EL.srdmchallengePage.hide();
-    DOM_EL.srdmchallengeQuiz.hide();
-    DOM_EL.srdmchallengeMain.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
