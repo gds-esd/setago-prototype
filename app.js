@@ -69,7 +69,7 @@ function setup(){ // a function that runs once
             DOM_EL.challengeTab.mousePressed(challengeEvent);
         
 
-    DOM_EL.loginPage.hide();
+
     DOM_EL.mainPage.hide();
     DOM_EL.ccachallengePage.hide();
     DOM_EL.ccachallengeQuiz.hide();
