@@ -63,8 +63,6 @@ function setup(){ // a function that runs once
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-
-
 }
 
 
@@ -137,13 +135,4 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-            DOM_EL.ccachallengePage.hide();
-            DOM_EL.ccachallengeQuiz.hide();
-            DOM_EL.ccachallengeMain.hide();
-            DOM_EL.commchallengePage.hide();
-            DOM_EL.commchallengePage.hide();
-            DOM_EL.commchallengeQuiz.hide();
-            DOM_EL.srdmchallengePage.hide();
-            DOM_EL.srdmchallengeQuiz.hide();
-            DOM_EL.srdmchallengeMain.hide();
 }
