@@ -103,7 +103,7 @@ function loginEvent(){
     if(DOM_EL.loginPageUsername.value() == "username"){
         if(DOM_EL.loginPagePassword.value() == "password"){
             //yay both username and password matched!
-            hideAllsubPage.hide();
+            DOM_EL.loginPage.hide();
             DOM_EL.mainPage.style("display","flex");
             DOM_EL.dashboardPage.style("display", "flex");
             console.log("show relevant page");
