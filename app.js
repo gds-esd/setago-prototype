@@ -67,13 +67,6 @@ function setup(){ // a function that runs once
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
-                DOM_EL.challengePage = select("#challenge-page")
-                    DOM_EL.ccachallengeTab = select ("#cca-startbutn");
-                    DOM_EL.ccachallengeTab.mousePressed(ccachallengeEvent);
-                    DOM_EL.commchallengeTab = select("#comm-startbtn");
-                    DOM_EL.commchallengeTab.mousePressed(commchallengeEvent);
-                    DOM_EL.srdmchallengeTab = select("#srdm-startbutn");
-                    DOM_EL.srdmchallengeTab.mousePressed(srdmchallengeEvent);
         
 
     DOM_EL.loginPage.hide();
@@ -156,9 +149,6 @@ function challengeEvent(){
     hideAllsubPage();
     DOM_EL.challengePage.style("display","flex");
 }
-
-///////////////////////////////////////////////////////////////////////////
-
 
 
 ///////////////////////////////////////////////////////////////////////////
