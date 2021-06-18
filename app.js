@@ -63,7 +63,6 @@ function setup(){ // a function that runs once
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
-            DOM_EL.sidebarContainer = select("sidebar-container")
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
@@ -79,19 +78,19 @@ function setup(){ // a function that runs once
 
     DOM_EL.loginPage.hide();
     DOM_EL.mainPage.hide();
+    DOM_EL.ccachallengePage.hide();
+    DOM_EL.ccachallengeQuiz.hide();
+    DOM_EL.ccachallengeMain.hide();
+    DOM_EL.commchallengePage.hide();
+    DOM_EL.commchallengePage.hide();
+    DOM_EL.commchallengeQuiz.hide();
+    DOM_EL.srdmchallengePage.hide();
+    DOM_EL.srdmchallengeQuiz.hide();
+    DOM_EL.srdmchallengeMain.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-        DOM_EL.ccachallengePage.hide();
-        DOM_EL.ccachallengeQuiz.hide();
-        DOM_EL.ccachallengeMain.hide();
-        DOM_EL.commchallengePage.hide();
-        DOM_EL.commchallengePage.hide();
-        DOM_EL.commchallengeQuiz.hide();
-        DOM_EL.srdmchallengePage.hide();
-        DOM_EL.srdmchallengeQuiz.hide();
-        DOM_EL.srdmchallengeMain.hide();
 
 
 }
@@ -160,28 +159,6 @@ function challengeEvent(){
 
 ///////////////////////////////////////////////////////////////////////////
 
-function ccachallengeEvent(){
-    hideAllsubPage();
-    DOM_EL.ccachallengePage.style("display","flex");
-}
-
-
-///////////////////////////////////////////////////////////////////////////
-
-function commchallengeEvent(){
-    hideAllsubPage();
-    DOM_EL.commchallengePage.style("display","flex");
-   
-}
-
-
-///////////////////////////////////////////////////////////////////////////
-
-function srdmchallengeEvent(){
-    hideAllsubPage();
-    DOM_EL.srdmchallengePage.style("display","flex");
-   
-}
 
 
 ///////////////////////////////////////////////////////////////////////////
@@ -191,10 +168,13 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
-        DOM_EL.ccachallengePage.hide();
+            DOM_EL.ccachallengePage.hide();
             DOM_EL.ccachallengeQuiz.hide();
             DOM_EL.ccachallengeMain.hide();
-        DOM_EL.commchallengePage.hide();
+            DOM_EL.commchallengePage.hide();
             DOM_EL.commchallengePage.hide();
             DOM_EL.commchallengeQuiz.hide();
+            DOM_EL.srdmchallengePage.hide();
+            DOM_EL.srdmchallengeQuiz.hide();
+            DOM_EL.srdmchallengeMain.hide();
 }
