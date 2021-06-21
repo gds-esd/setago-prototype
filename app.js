@@ -29,7 +29,9 @@ var DOM_EL = {
         questionnairePage : null,
         dashboardPage : null,
         challengePage : null,
-        crossculturalPage : null, 
+        crossculturalPage : null,
+            crossculturalquizPage : null;
+            crossculturalchallengePage : null;
         communicationPage : null, 
         soundreasoningPage : null,
 
@@ -60,6 +62,8 @@ function setup(){ // a function that runs once
             DOM_EL.challengeTab.mousePressed(challengeEvent);
         DOM_EL.challengePage = select ("#challenge-page")
         DOM_EL.crossculturalPage = select ("#cca-challenge-page");
+            DOM_EL.crossculturalquizPage = select("#cca-quiz-page");
+            DOM_EL.crossculturalchallengePage = select("#cca-challange-page")
         DOM_EL.communicationPage = select ("#comm-challenge-page");
 
 
@@ -69,6 +73,8 @@ function setup(){ // a function that runs once
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
+    DOM_EL.crossculturalquizPage.hide();
+    DOM_EL.crossculturalchallengePage.hide();
     DOM_EL.communicationPage.hide();
 }
 
@@ -143,5 +149,7 @@ function hideAllsubPage(){
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
+    DOM_EL.crossculturalquizPage.hide();
+    DOM_EL.crossculturalchallengePage.hide();
     DOM_EL.communicationPage.hide();
 }
