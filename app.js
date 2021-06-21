@@ -29,6 +29,9 @@ var DOM_EL = {
         questionnairePage : null,
         dashboardPage : null,
         challengePage : null,
+        crossculturalPage : null, 
+        communicationPage : null, 
+        soundreasoningPage : null,
 
 }
 
@@ -55,7 +58,8 @@ function setup(){ // a function that runs once
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
-        
+        DOM_EL.crossculturalPage = select ("#cca-challenge-page");
+        DOM_EL.communicationPage = select ("#comm-challenge-page");
 
 
     DOM_EL.mainPage.hide();
@@ -63,6 +67,8 @@ function setup(){ // a function that runs once
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.crossculturalPage.hide();
+    DOM_EL.communicationPage.hide();
 }
 
 
@@ -135,4 +141,6 @@ function hideAllsubPage(){
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.crossculturalPage.hide();
+    DOM_EL.communicationPage.hide();
 }
