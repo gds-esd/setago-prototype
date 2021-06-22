@@ -34,7 +34,8 @@ var DOM_EL = {
         crossCulturalQuiz : null,
         crossCulturalTab : null,
         crossCulturalQuizTab : null,
-        crossCulturalChallenge: null,
+        crossCulturalChallenge : null,
+        crossCuluralChallengeTab : null,
 }
 
 var APP_STATE = {
@@ -69,6 +70,8 @@ function setup(){ // a function that runs once
         DOM_EL.crossCulturalTab = select ("#cca-startbutn");
         DOM_EL.crossCulturalTab.mousePressed(crossCulturalTabEvent);
         DOM_EL.crossCulturalChallenge = select ("#cca-challange-page");
+        DOM_EL.crossCuluralChallengeTab = select ("#cca-nextbutn-challenge");
+        DOM_EL.crossCuluralChallengeTab.mousePressed(crossCuluralChallengeTabEvent);
 
 
     DOM_EL.mainPage.hide();
@@ -158,6 +161,14 @@ function crossCulturalQuizTabEvent(){
     hideAllsubPage();
     DOM_EL.crossCulturalQuiz.style("display","flex");
 }
+
+///////////////////////////////////////////////////////////////////////////
+
+function crossCuluralChallengeTabEvent(){
+    hideAllsubPage.hide();
+    DOM_EL.crossCulturalChallenge.style("display", "flex");
+}
+
 
 ///////////////////////////////////////////////////////////////////////////
 
