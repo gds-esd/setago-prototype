@@ -148,3 +148,32 @@ body{
 #diff-challenges{
     padding: 0px 0px 0px 50px;
 }
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+#cca-challenge-page{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+#cca_title{
+    padding: 0px 0px 0px 50px;
+}
+
+#cca_what{
+    padding: 0px 0px 0px 50px;
+}
+
+#cca_how{
+    padding: 0px 0px 0px 50px;
+}
+
+#cca_video{
+    padding: 0px 0px 0px 50px;
+}
+
+#cca-nextbutn-quiz{
+    padding: 0px 0px 0px 50px;
+}
