@@ -137,13 +137,10 @@ function challengeEvent(){
 ///////////////////////////////////////////////////////////////////////////
 
 function hideAllsubPage(){
-    DOM_EL.loginPage.hide();
     DOM_EL.focusAreaPage.hide();
     DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
-    DOM_EL.crossculturalquizPage.hide();
-    DOM_EL.crossculturalchallengePage.hide();
     DOM_EL.communicationPage.hide();
 }
