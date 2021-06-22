@@ -70,7 +70,7 @@ function setup(){ // a function that runs once
         DOM_EL.crossCulturalQuizTab = select ("#cca-nextbutn-quiz");
         DOM_EL.crossCulturalQuizTab.mousePressed(crossCulturalQuizTabEvent);
         DOM_EL.crossCulturalChallenge = select ("#cca-main-challenge");
-        DOM_EL.crossCulturalChallengeTab = select("cca-nextbutn-challenge");
+        DOM_EL.crossCulturalChallengeTab = select("#cca-nextbutn-challenge");
         DOM_EL.crossCulturalChallengeTab.mousePressed(crossCulturalChallengeTabEvent);
         
 
