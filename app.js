@@ -34,6 +34,8 @@ var DOM_EL = {
         crossCulturalQuiz : null,
         crossCulturalTab : null,
         crossCulturalQuizTab : null,
+        crossCulturalChallenge : null,
+        crossCulturalChallengeTab : null,
 }
 
 var APP_STATE = {
@@ -67,6 +69,10 @@ function setup(){ // a function that runs once
         DOM_EL.crossCulturalQuiz = select ("#cca-quiz-page");
         DOM_EL.crossCulturalQuizTab = select ("#cca-nextbutn-quiz");
         DOM_EL.crossCulturalQuizTab.mousePressed(crossCulturalQuizTabEvent);
+        DOM_EL.crossCulturalChallenge = select ("#cca-main-challenge");
+        DOM_EL.crossCulturalChallengeTab = select("cca-nextbutn-challenge");
+        DOM_EL.crossCulturalChallengeTab.mousePressed();
+        
 
 
     DOM_EL.mainPage.hide();
@@ -77,6 +83,7 @@ function setup(){ // a function that runs once
     DOM_EL.crossculturalPage.hide();
     DOM_EL.communicationPage.hide();
     DOM_EL.crossCulturalQuiz.hide();
+    DOM_EL.crossCulturalChallenge.hide();
 }
 
 
@@ -157,7 +164,10 @@ function crossCulturalQuizTabEvent(){
 }
 
 ///////////////////////////////////////////////////////////////////////////
-
+function crossCulturalChallengeTabEvent(){
+    hideAllsubPage();
+    DOM_EL.crossCulturalChallenge.style("display","flex");
+}
 
 
 
@@ -171,3 +181,5 @@ function hideAllsubPage(){
     DOM_EL.crossculturalPage.hide();
     DOM_EL.communicationPage.hide();
     DOM_EL.crossCulturalQuiz.hide();
+    DOM_EL.crossCulturalChallenge.hide();
+}
