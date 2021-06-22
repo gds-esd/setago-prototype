@@ -30,8 +30,8 @@ var DOM_EL = {
         dashboardPage : null,
         challengePage : null,
         crossculturalPage : null,
-        communicationPage : null, 
-
+        communicationPage : null,
+        crossCulturalQuiz : null,
 }
 
 var APP_STATE = {
@@ -60,6 +60,7 @@ function setup(){ // a function that runs once
         DOM_EL.challengePage = select ("#challenge-page")
         DOM_EL.crossculturalPage = select ("#cca-challenge-page");
         DOM_EL.communicationPage = select ("#comm-challenge-page");
+        DOM_EL.crossCulturalQuiz = select ("#cca-quiz-page");
 
 
     DOM_EL.mainPage.hide();
@@ -69,6 +70,7 @@ function setup(){ // a function that runs once
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
     DOM_EL.communicationPage.hide();
+    DOM_EL.crossCulturalQuiz.hide();
 }
 
 
@@ -143,4 +145,5 @@ function hideAllsubPage(){
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
     DOM_EL.communicationPage.hide();
+    DOM_EL.crossCulturalQuiz.hide();
 }
