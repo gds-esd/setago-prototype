@@ -181,6 +181,13 @@ body{
 /* //////////////////////////////////////////////////////////////////////// */
 
 #cca-quiz-page{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+#cca-quiz-title{
     padding: 0px 0px 0px 50px;
 }
 
