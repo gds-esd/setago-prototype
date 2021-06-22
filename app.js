@@ -63,7 +63,7 @@ function setup(){ // a function that runs once
         DOM_EL.communicationPage = select ("#comm-challenge-page");
         DOM_EL.crossCulturalQuiz = select ("#cca-quiz-page");
         DOM_EL.crossCulturalTab = select ("#cca-startbutn");
-        DOM_EL.crossCulturalTab.mousePressed()
+        DOM_EL.crossCulturalTab.mousePressed(crossCulturalTabEvent);
 
 
     DOM_EL.mainPage.hide();
