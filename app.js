@@ -52,7 +52,7 @@ function setup(){ // a function that runs once
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
             DOM_EL.progressionTab = select("#progression-tab");
-            DOM_EL.progressionTab.mousePressed();
+            DOM_EL.progressionTab.mousePressed(progressionEvent);
         DOM_EL.challengePage = select ("#challenge-page");
         DOM_EL.progressionPage = select ("#progression-page");
 
