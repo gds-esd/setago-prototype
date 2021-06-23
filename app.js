@@ -52,13 +52,13 @@ function setup(){ // a function that runs once
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
         DOM_EL.challengePage = select ("#challenge-page");
-        
-        
+        DOM_EL.progressionPage = select ("#progression-page");
 
 
     DOM_EL.mainPage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.progressionPage.hide();
 
 }
 
@@ -133,4 +133,5 @@ function challengeEvent(){
 function hideAllsubPage(){
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
+    DOM_EL.progressionPage.hide();
 }
