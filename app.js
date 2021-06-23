@@ -51,7 +51,7 @@ function setup(){ // a function that runs once
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
-        DOM_EL.challengePage = select ("#challenge-page")
+        DOM_EL.challengePage = select ("#challenge-page");
         
         
 
@@ -131,8 +131,6 @@ function challengeEvent(){
 ///////////////////////////////////////////////////////////////////////////
 
 function hideAllsubPage(){
-    DOM_EL.focusAreaPage.hide();
-    DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
 }
