@@ -25,12 +25,8 @@ var DOM_EL = {
             setagoTab : null,
             challengeTab: null,
             progressionTab: null,
-        focusAreaPage : null,
-        questionnairePage : null,
         dashboardPage : null,
-        challengePage : null,
         crossculturalPage : null,
-        communicationPage : null,
         crossCulturalQuiz : null,
         crossCulturalTab : null,
         crossCulturalQuizTab : null,
@@ -54,16 +50,13 @@ function setup(){ // a function that runs once
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.mainPage = select("#main-page");
-        DOM_EL.focusAreaPage = select("#focus-area-page");
-        DOM_EL.questionnairePage = select("#questionnaire-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
-        DOM_EL.challengePage = select ("#challenge-page")
+        DOM_EL.challengePage = select ("#diff-challenges")
         DOM_EL.crossculturalPage = select ("#cca-challenge-page");
-        DOM_EL.communicationPage = select ("#comm-challenge-page");
         DOM_EL.crossCulturalTab = select ("#cca-startbutn");
         DOM_EL.crossCulturalTab.mousePressed(crossCulturalTabEvent);
         DOM_EL.crossCulturalQuiz = select ("#cca-quiz-page");
@@ -76,12 +69,9 @@ function setup(){ // a function that runs once
 
 
     DOM_EL.mainPage.hide();
-    DOM_EL.focusAreaPage.hide();
-    DOM_EL.questionnairePage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.crossculturalPage.hide();
-    DOM_EL.communicationPage.hide();
     DOM_EL.crossCulturalQuiz.hide();
     DOM_EL.crossCulturalChallenge.hide();
 }
