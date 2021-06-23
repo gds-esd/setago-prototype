@@ -51,7 +51,7 @@ function setup(){ // a function that runs once
             DOM_EL.setagoTab.mousePressed(logoEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
-        DOM_EL.challengePage = select ("#diff-challenges")
+        DOM_EL.challengePage = select ("#challenge-page")
         
         
 
