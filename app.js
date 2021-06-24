@@ -23,6 +23,7 @@ var DOM_EL = {
     mainPage: null,
         sidebarContainer : null,
             setagoTab : null,
+            dashboardTab : null,
             challengeTab: null,
             progressionTab: null,
         dashboardPage : null,
@@ -49,6 +50,8 @@ function setup(){ // a function that runs once
         DOM_EL.dashboardPage = select("#dashboard-page");
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
+            DOM_EL.dashboardTab = select("#dashboard-tab");
+            DOM_EL.dashboardTab.mousePressed(dashboardEvent);
             DOM_EL.challengeTab = select("#challenge-tab");
             DOM_EL.challengeTab.mousePressed(challengeEvent);
             DOM_EL.progressionTab = select("#progression-tab");
@@ -121,6 +124,12 @@ function logoEvent(){
 }
 ///////////////////////////////////////////////////////////////////////////
 
+function dashboardEvent(){
+    hideAllsubPage();
+    DOM_EL.dashboardPage.style("display","flex");
+}
+
+///////////////////////////////////////////////////////////////////////////
 
 function challengeEvent(){
     hideAllsubPage();
