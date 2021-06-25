@@ -149,7 +149,6 @@ function challengeEvent(){
     DOM_EL.challengePage.style("display","flex");
 }
 
-
 ///////////////////////////////////////////////////////////////////////////
 
 function progressionEvent(){
