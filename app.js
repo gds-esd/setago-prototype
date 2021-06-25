@@ -122,17 +122,17 @@ xhr.send();
 
 ///////////////////////////////////////////////////////////////////////////
 
+function focusAreaEvent(){
+    hideAllsubPage();
+    DOM_EL.dashboardPage.style("display","flex");
+}
+
+///////////////////////////////////////////////////////////////////////////
 
 function logoEvent(){
     hideAllsubPage();
     DOM_EL.dashboardPage.style("display","flex");
   
-}
-///////////////////////////////////////////////////////////////////////////
-
-function focusAreaEvent(){
-    hideAllsubPage();
-    DOM_EL.dashboardPage.style("display","flex");
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -159,8 +159,8 @@ function progressionEvent(){
 ///////////////////////////////////////////////////////////////////////////
 
 function hideAllsubPage(){
-    DOM_EL.dashboardPage.hide();
     DOM_EL.focusAreaPage.hide();
+    DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
 }
