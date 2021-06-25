@@ -123,6 +123,7 @@ xhr.send();
 
 function focusAreaEvent(){
     hideAllsubPage();
+    DOM_EL.mainPage.style("display", "flex");
     DOM_EL.dashboardPage.style("display","flex");
 }
 
