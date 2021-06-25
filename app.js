@@ -48,10 +48,10 @@ function setup(){ // a function that runs once
         DOM_EL.loginButton.mousePressed(loginEvent);
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
-    DOM_EL.mainPage = select("#main-page");
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.focusAreaTab = select("#focus-area-donebutn");
         DOM_EL.focusAreaTab.mousePressed(focusAreaEvent);
+    DOM_EL.mainPage = select("#main-page");
         DOM_EL.dashboardPage = select("#dashboard-page");
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
@@ -65,8 +65,8 @@ function setup(){ // a function that runs once
         DOM_EL.progressionPage = select ("#progression-page");
 
 
-    DOM_EL.mainPage.hide();
     DOM_EL.focusAreaPage.hide();
+    DOM_EL.mainPage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
@@ -160,7 +160,7 @@ function progressionEvent(){
 
 function hideAllsubPage(){
     DOM_EL.dashboardPage.hide();
-    DOM_EL.focusAreaTab.hide();
+    DOM_EL.focusAreaPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
 }
