@@ -51,7 +51,7 @@ function setup(){ // a function that runs once
     DOM_EL.mainPage = select("#main-page");
         DOM_EL.focusAreaPage = select("#focus-area-page");
         DOM_EL.focusAreaTab = select("#focus-area-donebutn");
-        DOM_EL.focusAreaTab.mousePressed();
+        DOM_EL.focusAreaTab.mousePressed(focusAreaEvent);
         DOM_EL.dashboardPage = select("#dashboard-page");
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
