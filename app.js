@@ -89,7 +89,7 @@ function loginEvent(){
         if(DOM_EL.loginPagePassword.value() == "password"){
             //yay both username and password matched!
             DOM_EL.loginPage.hide();
-            DOM_EL.mainPage.style("display","flex");
+            DOM_EL.mainPage.hide();
             DOM_EL.focusAreaPage.style("display","flex");
             console.log("show relevant page");
         }
