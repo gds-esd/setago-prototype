@@ -20,14 +20,14 @@ var DOM_EL = {
         loginButton : null,
         loginPageUsername : null,
         loginPagePassword : null,
+    focusAreaPage : null,
+    focusAreaTab : null,
     mainPage : null,
         sidebarContainer : null,
             setagoTab : null,
             dashboardTab : null,
             challengeTab : null,
             progressionTab : null,
-        focusAreaPage : null,
-        focusAreaTab : null,
         dashboardPage : null,
         challengePage : null,
         progressionPage : null,
@@ -89,7 +89,6 @@ function loginEvent(){
         if(DOM_EL.loginPagePassword.value() == "password"){
             //yay both username and password matched!
             DOM_EL.loginPage.hide();
-            DOM_EL.mainPage.hide();
             DOM_EL.focusAreaPage.style("display","flex");
             console.log("show relevant page");
         }
@@ -160,6 +159,7 @@ function progressionEvent(){
 
 function hideAllsubPage(){
     DOM_EL.focusAreaPage.hide();
+    DOM_EL.mainPage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
