@@ -18,14 +18,16 @@ lastly you need to place this file in your js folder.
 var DOM_EL = {
     loginPage : null,
         loginButton : null,
-        loginPageUsername: null,
-        loginPagePassword: null,
-    mainPage: null,
+        loginPageUsername : null,
+        loginPagePassword : null,
+    mainPage : null,
         sidebarContainer : null,
             setagoTab : null,
             dashboardTab : null,
-            challengeTab: null,
-            progressionTab: null,
+            challengeTab : null,
+            progressionTab : null,
+        focusAreaPage : null,
+        focusAreaTab : null,
         dashboardPage : null,
         challengePage : null,
         progressionPage : null,
@@ -47,6 +49,9 @@ function setup(){ // a function that runs once
         DOM_EL.loginPageUsername = select("#login-page-username");
         DOM_EL.loginPagePassword = select("#login-page-password");
     DOM_EL.mainPage = select("#main-page");
+        DOM_EL.focusAreaPage = select("#focus-area-page");
+        DOM_EL.focusAreaTab = select("#focus-area-donebutn");
+        DOM_EL.focusAreaTab.mousePressed();
         DOM_EL.dashboardPage = select("#dashboard-page");
             DOM_EL.setagoTab = select("#title");
             DOM_EL.setagoTab.mousePressed(logoEvent);
@@ -61,6 +66,7 @@ function setup(){ // a function that runs once
 
 
     DOM_EL.mainPage.hide();
+    DOM_EL.focusAreaPage.hide();
     DOM_EL.dashboardPage.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
@@ -84,7 +90,7 @@ function loginEvent(){
             //yay both username and password matched!
             DOM_EL.loginPage.hide();
             DOM_EL.mainPage.style("display","flex");
-            DOM_EL.dashboardPage.style("display", "flex");
+            DOM_EL.focusAreaPage.style("display","flex");
             console.log("show relevant page");
         }
         else{
@@ -123,6 +129,12 @@ function logoEvent(){
   
 }
 ///////////////////////////////////////////////////////////////////////////
+
+function focusAreaEvent(){
+    hideAllsubPage();
+    DOM_EL.dashboardPage.style("display","flex");
+}
+
 
 function dashboardEvent(){
     hideAllsubPage();
