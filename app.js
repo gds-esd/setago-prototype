@@ -160,6 +160,7 @@ function progressionEvent(){
 
 function hideAllsubPage(){
     DOM_EL.dashboardPage.hide();
+    DOM_EL.focusAreaTab.hide();
     DOM_EL.challengePage.hide();
     DOM_EL.progressionPage.hide();
 }
