@@ -135,6 +135,7 @@ function focusAreaEvent(){
     DOM_EL.dashboardPage.style("display","flex");
 }
 
+///////////////////////////////////////////////////////////////////////////
 
 function dashboardEvent(){
     hideAllsubPage();
