@@ -111,7 +111,13 @@ let k = "&password=" + DOM_EL.loginPagePassword.value();
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://cotf.cf/admin/SETAGO_GET_USER' + u + k, true);
 xhr.onload = function () {
-    console.log("got a reply");
+    if(this.status == 200){
+        console.log(this.response);
+    }
+    else if(this.status == 404){
+        console.log(this.response);
+        console.log("show some error message");
+    }
 };
 xhr.send();
 }
