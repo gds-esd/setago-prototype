@@ -485,3 +485,27 @@
 </div>
 
 <!-- /* //////////////////////////////////////////////////////////////////////// */--> 
+
+
+
+    console.log("check if account and password is correct");
+    console.log(DOM_EL.loginPageUsername.value());
+    if(DOM_EL.loginPageUsername.value() == "username"){
+        if(DOM_EL.loginPagePassword.value() == "password"){
+            //yay both username and password matched!
+            DOM_EL.loginPage.hide();
+            DOM_EL.focusAreaPage.style("display","flex");
+            console.log("show relevant page");
+        }
+        else{
+            console.log("boo password wrong");
+        }
+    }
+    else{
+        console.log("boo username wrong");
+    }
+
+    console.log(DOM_EL.loginPagePassword.value());
+    console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
+    console.log("wait for server to reply");
+    console.log("show relevant page");

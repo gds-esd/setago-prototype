@@ -83,27 +83,6 @@ function draw(){  // a function that runs in a loop once function setup is finis
 ///////////////////////////////////////////////////////////////////////////
 
 function loginEvent(){
-    console.log("check if account and password is correct");
-    console.log(DOM_EL.loginPageUsername.value());
-    if(DOM_EL.loginPageUsername.value() == "username"){
-        if(DOM_EL.loginPagePassword.value() == "password"){
-            //yay both username and password matched!
-            DOM_EL.loginPage.hide();
-            DOM_EL.focusAreaPage.style("display","flex");
-            console.log("show relevant page");
-        }
-        else{
-            console.log("boo password wrong");
-        }
-    }
-    else{
-        console.log("boo username wrong");
-    }
-
-    console.log(DOM_EL.loginPagePassword.value());
-    console.log("if wrong do nothing, if correct, ask server whether account needs onboarding or can proceed to dashboard page");
-    console.log("wait for server to reply");
-    console.log("show relevant page");
 
     let u = "?user=" + DOM_EL.loginPageUsername.value();
 let k = "&password=" + DOM_EL.loginPagePassword.value();
@@ -113,6 +92,9 @@ xhr.open('GET', 'https://cotf.cf/admin/SETAGO_GET_USER' + u + k, true);
 xhr.onload = function () {
     if(this.status == 200){
         console.log(this.response);
+            DOM_EL.loginPage.hide();
+            DOM_EL.focusAreaPage.style("display","flex");
+            console.log("show relevant page");
     }
     else if(this.status == 404){
         console.log(this.response);
